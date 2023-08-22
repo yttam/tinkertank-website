@@ -9,6 +9,7 @@ import testimonialData from './testimonials.data.json'
 })
 
 export class HomePage {
+  public darkMode = false
   testimonials: any = testimonialData.testimonials
   imgLogoSrc: string = "/assets/images/logo-black.png"
   whiteLogoSrc: string = "/assets/images/white-logo-thin.png"
@@ -42,9 +43,19 @@ export class HomePage {
     private router: Router,
     private route: ActivatedRoute
   ) {
-
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       this.imgLogoSrc = "/assets/images/logo-white.png"
+    }
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    this.darkMode = prefersDark.matches;
+    this.updateDarkMode();
+    prefersDark.addEventListener('change', () => {
+      this.darkMode = prefersDark.matches;
+      this.updateDarkMode();
+    });
+
+
   }
 
   showIntercom() {
@@ -78,8 +89,48 @@ export class HomePage {
 
   segmentChanged(event: any) {
     const tabName = event.detail.value;
-    const routePath = '/' + tabName; // Assuming your routes are defined like this
+    const routePath = '/' + tabName;
     this.router.navigate([routePath]);
   }
+
+  toggleDarkTheme(event: any) {
+    console.log('Toggle changed:', event.detail.checked);
+    this.darkMode = event.detail.checked;
+    this.updateDarkMode();
+  }
+
+  updateDarkMode() {
+    console.log('Updating dark mode to:', this.darkMode);
+    document.body.classList.toggle('dark', this.darkMode);
+  }
+
+  afterschoolers() {
+    this.router.navigate(['/afterschoolers']);
+  }
+
+  holidayCamps() {
+    this.router.navigate(['/holiday-camps']);
+  }
+
+  birthdayParties() {
+    this.router.navigate(['/birthday-parties']);
+  }
+
+  schools() {
+    this.router.navigate(['/schools']);
+  }
+
+  whyTinkertank() {
+    this.router.navigate(['/why-tinkertank']);
+  }
+
+  locationBrookvale() {
+    this.router.navigate(['/location-brookvale']);
+  }
+
+  locationNorthSydney() {
+    this.router.navigate(['/location-north-sydney']);
+  }
+
 
 }

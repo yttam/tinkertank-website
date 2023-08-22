@@ -1,173 +1,3 @@
-// LIGHT BLUE   #00C4CC
-// ORANGE  #F14902
-// LIGHTER YELLOW  #F4B324
-// DARK. GREY  #303030
-// CREAMY WHITE  #F6E7D8
-// ALMOST BLACK #303030
-// BLACK  #1C191A
-// LIGHTER GREY  #464646
-// DARK YELLOW  #E0A101
-// ALMOST WHITE  #F7F7F7
-
-
-ion-card.hero {
-  background-color: #d3322e !important;
-
-  ion-card-title {
-    font-size: 3.8em !important;
-    color: #F6E7D8;
-  }
-
-  ion-card-subtitle {
-    font-size: 2em !important;
-  }
-}
-
-// ion-card.content {
-//   background-color: #F6E7D8 !important;
-//   ion-card-title  {
-//     font-size: 3em !important;
-//   }
-//   ion-card-subtitle  {
-//     font-size: 1.5em !important;
-//   }
-// }
-
-
-ion-card.click2action {
-  background-color: #F4B324 !important;
-
-  ion-card-title {
-    font-size: 3em !important;
-  }
-
-  ion-card-subtitle {
-    font-size: 2em !important;
-    color: #F6E7D8;
-  }
-}
-
-ion-card.click2action2 {
-  background-color: #F14902 !important;
-
-  ion-card-title {
-    font-size: 3em !important;
-  }
-
-  ion-card-subtitle {
-    font-size: 2em !important;
-    color: #F6E7D8;
-  }
-}
-
-// ion-card.method {
-//   background-color: #303030 !important;
-//   ion-card-title  {
-//     font-size: 3em !important;
-//     color: #F6E7D8;
-//   }
-//   ion-card-content  {
-//     font-size: 1.5em !important;
-//     color: #F6E7D8;
-//   }
-// }
-
-ion-row.footer {
-  background-color: #d3322e !important;
-  color: #F6E7D8;
-  // ion-card-title  {
-  //   font-size: 3.8em !important;
-  // }
-  // ion-card-subtitle  {
-  //   font-size: 2em !important;
-  // }
-}
-
-
-
-.brand {
-  max-width: 500px;
-}
-
-
-.logo {
-  max-width: 150px;
-  max-height: 150px;
-
-}
-
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 15%;
-  // transform: translateY(-50%);
-}
-
-#container strong {
-  font-family: 'BebasNeue', sans-serif;
-  text-transform: uppercase;
-  font-size: 5em !important;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-ion-card {
-  box-shadow: none;
-}
-
-ion-content ion-toolbar {
-  --background: translucent;
-}
-
-// h1 {
-//   font-family: 'BebasNeue', sans-serif;
-//   text-transform: uppercase;
-//   font-size: 3.5em !important;
-// }
-
-ion-card-title.hero {
-  font-size: 3.8em !important;
-}
-
-ion-card-subtitle.hero {
-  font-size: 2.5em !important;
-}
-
-ion-card-subtitle.hero-content {
-  font-size: 1.5em !important;
-  text-transform: capitalize;
-}
-
-// .hero> {
-
-//   // background-image: url('/assets/images/IMG_9201.jpg');
-//   // background-repeat: no-repeat;
-//   // background-size:cover;
-//   // background-position:  -100px 0px;
-//   // min-width: 300px;
-//   // min-height: 300px;
-// }
-
-// ion-card >img {
-//   max-height: 600px;
-// }
-
-
-
-// matthew
 ion-card.title-card {
   margin: 0;
   border-radius: 0;
@@ -181,22 +11,24 @@ ion-card.title-card {
 
   ion-card-title {
     font-size: 4em !important;
-    color: #F7F7F7;
+    color: var(--ion-text-color);
     text-align: center;
   }
 
   ion-card-subtitle {
     font-size: 2em !important;
-    color: #F7F7F7;
+    color: var(--ion-text-color);
     text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
-  background-image: url('/assets/images/crowd.jpg');
+  background-image: url('/assets/images/matthew/default.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: 0px 0px;
   min-width: 300px;
-  min-height: 500px;
+  min-height: 550px;
 }
 
 ion-card.trusted-by {
@@ -211,8 +43,158 @@ ion-card.trusted-by {
   background-color: rgba(0, 0, 0, 0) !important;
 
   ion-card-title {
+    margin-top: 80px;
+    margin-bottom: 40px;
     font-size: 4em !important;
-    color: #303030;
+    color: var(--ion-text-color);
     text-align: center;
+  }
+}
+
+.school-logo {
+  width: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.home-info {
+  margin: 0;
+  border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  ion-card {
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+
+  ion-card-title {
+    font-size: 2.6em !important;
+    color: var(--ion-text-color);
+    text-align: left;
+  }
+
+  ion-card-subtitle {
+    font-size: 1.2em !important;
+    color: var(--ion-text-color);
+    text-align: left;
+  }
+}
+
+.what-is-tinkertank {
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  ion-card-title {
+    font-size: 2.6em !important;
+    color: var(--ion-text-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  ion-card-subtitle {
+    font-size: 1.2em !important;
+    color: var(--ion-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+.sign-up-today {
+  margin: 0;
+  border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  ion-card-title {
+    font-size: 2.6em !important;
+    color: var(--ion-text-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.home-image {
+  max-width: 100px;
+}
+
+
+
+
+
+
+
+
+// gpt 4
+ion-toolbar {
+  --background: black;
+  --color: white;
+
+  .signup-button {
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+}
+
+.banner {
+  position: relative;
+
+  img {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .overlay-content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+
+      .afterschoolers-button {
+        background: white;
+        color: black;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .holiday-camps-button {
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+      }
+    }
+  }
+}
+
+.schools {
+  text-align: center;
+
+  h2 {
+    font-size: 1.5em;
+    color: black;
+  }
+
+  img {
+    width: 100%;
   }
 }

@@ -4,19 +4,22 @@
       <ion-button color="dark" class="ion-text-capitalize" (click)="home()">
         <ion-icon name="chatbubbles-outline"></ion-icon>
       </ion-button>
+      <ion-button color="dark" class="ion-text-capitalize" (click)="home()">
+        <ion-toggle (ionChange)="toggleDarkTheme($event)"></ion-toggle>
+      </ion-button>
     </ion-buttons>
 
     <ion-buttons slot="secondary">
-      <ion-button color="dark" class="ion-text-capitalize" (click)="home()">
+      <ion-button color="dark" class="ion-text-capitalize" (click)="afterschoolers()">
         Afterschoolers
       </ion-button>
-      <ion-button color="dark" class="ion-text-capitalize" (click)="enrollNow()">
+      <ion-button color="dark" class="ion-text-capitalize" (click)="holidayCamps()">
         Holiday Camps
       </ion-button>
-      <ion-button color="dark" class="ion-text-capitalize" (click)="enrollNow()">
+      <ion-button color="dark" class="ion-text-capitalize" (click)="birthdayParties()">
         Birthday Party
       </ion-button>
-      <ion-button color="dark" class="ion-text-capitalize" (click)="locationPage()">
+      <ion-button color="dark" class="ion-text-capitalize" (click)="schools()">
         Schools
       </ion-button>
       <ion-button color="dark" class="ion-text-capitalize" (click)="locationPage()">
@@ -37,7 +40,10 @@
   <ion-card class="title-card ion-text-center">
     <ion-card-header>
       <ion-card-title>Design. Code. Robots. Play.</ion-card-title>
-      <ion-card-subtitle>The Original STEAM educational<br>enrichment program</ion-card-subtitle>
+      <ion-card-subtitle>TinkerTank Studios are where students aged 6-13 years discover engaging school holiday
+        activities and after-school programs that empower them to get creative with technology. Ready to revolutionize
+        education and unlock the true potential of tomorrow’s leaders? Don’t wait, join us today, and together we’ll
+        create a world of empowered students.</ion-card-subtitle>
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -62,18 +68,180 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-img src="/assets/images/matthew/logo1.jpg"></ion-img>
+          <ion-img class="school-logo" src="/assets/images/matthew/default.jpg"></ion-img>
         </ion-col>
         <ion-col>
-          <ion-img src="/assets/images/matthew/logo1.jpg"></ion-img>
+          <ion-img class="school-logo" src="/assets/images/matthew/default.jpg"></ion-img>
         </ion-col>
         <ion-col>
-          <ion-img src="/assets/images/matthew/logo1.jpg"></ion-img>
+          <ion-img class="school-logo" src="/assets/images/matthew/default.jpg"></ion-img>
         </ion-col>
         <ion-col>
-          <ion-img src="/assets/images/matthew/logo1.jpg"></ion-img>
+          <ion-img class="school-logo" src="/assets/images/matthew/default.jpg"></ion-img>
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-card>
+
+  <ion-card class="ion-text-center home-info">
+    <ion-grid>
+
+      <ion-row>
+
+        <ion-col>
+          <ion-img class="home-image" src="/assets/images/matthew/default.jpg"></ion-img>
+        </ion-col>
+
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Afterschoolers ROCK!</ion-card-title>
+              <ion-card-subtitle>Our goal is to ignite the spark of curiosity in every child, guiding them on a journey
+                of self-discovery. We believe that with the right tools and support, there are no limits to what young
+                minds can accomplish.</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Unique Holiday Camps!</ion-card-title>
+              <ion-card-subtitle>We challenge traditional perspectives, utilising state-of-the-art technologies to fuel
+                a creative learning experience. Say goodbye to one-size-fits-all methods and embrace the power of
+                customised, cutting-edge techniques during the school holidays.</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-img class="home-image" src="/assets/images/matthew/default.jpg"></ion-img>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col>
+          <ion-img class="home-image" src="/assets/images/matthew/default.jpg"></ion-img>
+        </ion-col>
+
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>The BEST Birthday Party!</ion-card-title>
+              <ion-card-subtitle>TinkerTank birthday parties are the ultimate way to learn about robotics and have super
+                fun and friendly competition. This is a party like no other - and they will be sure to say "That was the
+                best party EVER!"</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>TinkerTank and Schools</ion-card-title>
+              <ion-card-subtitle>STEAM is the future of education… and work. Let us help you guide your students into
+                discovering their passion for STEAM!</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-img class="home-image" src="/assets/images/matthew/default.jpg"></ion-img>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card class="what-is-tinkertank">
+    <ion-card-header>
+      <ion-card-title>
+        What is TinkerTank?
+      </ion-card-title>
+      <ion-card-subtitle>Through Exploration And Curiosity, We Find Each Students Passion And Help Develop Critical
+        Thinking, Problem Solving, Communication And Perseverance Skills.</ion-card-subtitle>
+      <ion-button color="dark" class="ion-text-capitalize" (click)="locationPage()">
+        Julija Instagram
+      </ion-button>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="sign-up-today">
+    <ion-card-header>
+      <ion-card-title>
+        Sign up today.
+      </ion-card-title>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button color="dark" class="ion-text-capitalize" (click)="locationPage()">
+              Learn More
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="dark" class="ion-text-capitalize" (click)="locationPage()">
+              Get Started
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
+
+<!-- <ion-header>
+  <ion-toolbar color="custom">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/afterschoolers">Afterschoolers</ion-button>
+      <ion-button routerLink="/holiday-camps">Holiday Camps</ion-button>
+      <ion-button routerLink="/birthday-party">Birthday Party</ion-button>
+      <ion-button routerLink="/schools">Schools</ion-button>
+      <ion-button routerLink="/events">Events</ion-button>
+      <ion-button routerLink="/we-rock">We Rock!</ion-button>
+      <ion-button class="signup-button">Signup</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="banner">
+    <img src="dud_url.jpg" />
+    <div class="overlay-content">
+      <h1>Design. Code. Robots. Play.</h1>
+      <p>TinkerTank Studios are where students aged 6-13 years discover engaging school holiday activities and
+        after-school programs that empower them to get creative with technology...</p>
+      <div class="buttons">
+        <ion-button routerLink="/afterschoolers" class="afterschoolers-button">Afterschoolers</ion-button>
+        <ion-button routerLink="/holiday-camps" class="holiday-camps-button">Holiday Camps</ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="schools">
+    <h2>Schools we work with</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col><img src="dud_url1.jpg" /></ion-col>
+        <ion-col><img src="dud_url2.jpg" /></ion-col>
+        <ion-col><img src="dud_url3.jpg" /></ion-col>
+        <ion-col><img src="dud_url4.jpg" /></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content> -->
