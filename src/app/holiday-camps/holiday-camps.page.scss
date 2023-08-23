@@ -1,0 +1,109 @@
+.page-title {
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    ion-card-title {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        font-size: 4em !important;
+        color: var(--ion-text-color);
+        text-align: center;
+    }
+
+}
+
+ion-card.title-card {
+    margin: 0;
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    ion-card-title {
+        font-size: 4em !important;
+        color: var(--ion-text-color);
+        text-align: center;
+    }
+
+    ion-card-subtitle {
+        font-size: 2em !important;
+        color: var(--ion-text-color);
+        text-align: center;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    background-image: url('/assets/images/matthew/default.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 0px 0px;
+    min-width: 300px;
+    min-height: 550px;
+}
+
+.holiday-camps-info {
+    margin: 0;
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    ion-card {
+        min-height: 300px;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    ion-card-title {
+        font-size: 2.6em !important;
+        color: var(--ion-text-color);
+        text-align: left;
+    }
+
+    ion-card-subtitle {
+        font-size: 1.2em !important;
+        color: var(--ion-text-color);
+        text-align: left;
+    }
+}
+
+.text-excerpt {
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    ion-card-title {
+        font-size: 2.6em !important;
+        color: var(--ion-text-color);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    ion-card-subtitle {
+        font-size: 1.2em !important;
+        color: var(--ion-text-color);
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+.activity-grid {}
+
+
+
+.open-studio {
+    ion-card-title {
+        font-size: 2.6em !important;
+        background-color: rgba(255, 0, 0, 0) !important;
+    }
+
+    ion-card-subtitle {
+        background-color: rgba(255, 0, 0, 0) !important;
+    }
+}
